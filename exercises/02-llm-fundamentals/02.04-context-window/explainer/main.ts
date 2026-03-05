@@ -1,5 +1,5 @@
 import { generateText } from 'ai';
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { Tiktoken } from 'js-tiktoken/lite';
 import o200k_base from 'js-tiktoken/ranks/o200k_base';
 

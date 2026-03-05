@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { generateText } from 'ai';
 import { evalite } from 'evalite';
 

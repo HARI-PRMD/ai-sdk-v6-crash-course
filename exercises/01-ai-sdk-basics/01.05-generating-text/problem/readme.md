@@ -7,7 +7,7 @@ I've given you a couple of to-dos inside the [`main.ts`](./main.ts) file. The fi
 
 ```ts
 // Import the necessary functions
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { generateText } from 'ai';
 
 // TODO: Choose a model. I recommend using the Google Gemini model:

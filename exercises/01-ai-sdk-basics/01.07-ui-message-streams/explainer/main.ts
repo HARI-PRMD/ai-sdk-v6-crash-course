@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { streamText } from 'ai';
 
 const model = google('gemini-2.5-flash');

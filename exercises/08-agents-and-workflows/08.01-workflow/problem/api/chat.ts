@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { generateText, streamText, type UIMessage } from 'ai';
 
 const formatMessageHistory = (messages: UIMessage[]) => {

@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { streamText, type UIMessage } from 'ai';
 
 type MyMetadata = {

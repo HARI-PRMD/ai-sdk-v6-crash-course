@@ -3,7 +3,7 @@ import {
   streamText,
   type UIMessage,
 } from 'ai';
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 
 export const POST = async (req: Request): Promise<Response> => {
   const body: { messages: UIMessage[]; id: string } =

@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { streamText, tool } from 'ai';
 import { styleText } from 'node:util';
 import z from 'zod';

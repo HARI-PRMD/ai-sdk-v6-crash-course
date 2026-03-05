@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { streamText } from 'ai';
 
 console.log('Process starting...');

@@ -1,4 +1,4 @@
-import { google } from '#shared/provider';
+import { google } from '#shared/provider.ts';
 import { stepCountIs, streamText, tool } from 'ai';
 import { z } from 'zod';
 import * as fsTools from './file-system-functionality.ts';
