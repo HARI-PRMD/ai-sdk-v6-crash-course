@@ -5,7 +5,7 @@ This streaming process is complex, but the AI SDK simplifies it for us. In this 
 Let's look at the problem we need to solve:
 
 ```ts
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 
 const model = google('gemini-2.5-flash');

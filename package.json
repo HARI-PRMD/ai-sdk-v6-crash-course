@@ -5,8 +5,8 @@
   "repository": "https://github.com/ai-hero-dev/ai-sdk-v5-crash-course",
   "type": "module",
   "scripts": {
-    "dev": "ai-hero-cli exercise",
-    "exercise": "ai-hero-cli exercise",
+    "dev": "NODE_OPTIONS='--env-file=.env' ai-hero-cli exercise",
+    "exercise": "NODE_OPTIONS='--env-file=.env' ai-hero-cli exercise",
     "prepare": "husky"
   },
   "keywords": [],

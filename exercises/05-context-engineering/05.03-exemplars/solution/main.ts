@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 
 const INPUT = `Do some research on induction hobs and how I can replace a 100cm wide AGA cooker with an induction range cooker. Which is the cheapest, which is the best?`;

@@ -11,7 +11,7 @@ The code uses [Tavily](https://www.tavily.com/), a third-party service that can 
 Let's look at the main code:
 
 ```typescript
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 import { tavily } from '@tavily/core';
 

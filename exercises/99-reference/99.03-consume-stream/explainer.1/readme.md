@@ -5,7 +5,7 @@ The AI SDK, by default, does not always wait for a stream to be completed. This 
 In this code here, we're calling `streamText`, passing "Hello, world!" to Gemini 2.5 Flash, and we have an `onFinish` on the `streamTextResult`.
 
 ```ts
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 
 console.log('Process starting...');
@@ -45,7 +45,7 @@ That's because even though we're getting streaming data coming from the LLM, we'
 If we do process them, for instance, using a for-await loop, our code would look like this:
 
 ```ts
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 
 console.log('Process starting...');
@@ -82,7 +82,7 @@ However, there are some situations where we want to consume the entire stream an
 For that, we can use the `consumeStream()` method on the `streamTextResult` as shown in explainer.1:
 
 ```ts
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 
 console.log('Process starting...');
@@ -118,7 +118,7 @@ as we expect.
 Now this is not just available on the return type of `streamTextResult` too. There's also a top level function called `consumeStream`, which can consume a readable stream until it's fully read, as shown in [explainer.2](../explainer.2/main.ts):
 
 ```ts
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { consumeStream, streamText } from 'ai';
 
 console.log('Process starting...');

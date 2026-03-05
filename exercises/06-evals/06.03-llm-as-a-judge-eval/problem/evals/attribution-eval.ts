@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { generateObject } from 'ai';
 import { createScorer } from 'evalite';
 import { readFileSync } from 'fs';

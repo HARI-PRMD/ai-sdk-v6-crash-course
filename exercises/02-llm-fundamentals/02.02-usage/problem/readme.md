@@ -7,7 +7,7 @@ In this exercise, we'll be working with a model to generate a response about sau
 Let's look at the code we're working with:
 
 ```typescript
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText } from 'ai';
 
 const output = streamText({

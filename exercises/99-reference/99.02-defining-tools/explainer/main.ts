@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { streamText, tool } from 'ai';
 import { styleText } from 'node:util';
 import z from 'zod';

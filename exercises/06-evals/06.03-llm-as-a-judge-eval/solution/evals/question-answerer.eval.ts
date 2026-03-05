@@ -1,4 +1,4 @@
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { generateObject, generateText } from 'ai';
 import { evalite } from 'evalite';
 import { readFileSync } from 'fs';

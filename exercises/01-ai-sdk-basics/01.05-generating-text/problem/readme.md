@@ -3,11 +3,11 @@ Let's look at the most basic functionality of the AI SDK, generating some text. 
 - a model that you're going to use
 - a prompt that you're going to pass to that model
 
-I've given you a couple of to-dos inside the [`main.ts`](./main.ts) file. The first to-do is to choose a model and then instantiate it. This means going up to the `@ai-sdk/google` import here, grabbing the `google` function and then calling it with the model that you want to choose.
+I've given you a couple of to-dos inside the [`main.ts`](./main.ts) file. The first to-do is to choose a model and then instantiate it. This means going up to the `#shared/provider` import here, grabbing the `google` function and then calling it with the model that you want to choose.
 
 ```ts
 // Import the necessary functions
-import { google } from '@ai-sdk/google';
+import { google } from '#shared/provider';
 import { generateText } from 'ai';
 
 // TODO: Choose a model. I recommend using the Google Gemini model:
